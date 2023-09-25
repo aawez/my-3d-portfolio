@@ -32,7 +32,7 @@ import thesis from "./thesis.png";
 
 import jugal from "./testimonial/jugal.jpeg";
 import preet from "./testimonial/preet.jpeg";
-import aarif from "./testimonial/aarif.jpeg";
+import arpit from "./testimonial/arpit.jpeg";
 
 export {
   logo,
@@ -65,5 +65,5 @@ export {
   thesis,
   jugal,
   preet,
-  aarif,
+  arpit,
 };

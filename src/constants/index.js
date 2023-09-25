@@ -25,7 +25,7 @@ import {
     threejs,
     jugal,
     preet,
-    aarif,
+    arpit,
   } from "../assets";
   
   export const navLinks = [
@@ -169,11 +169,11 @@ import {
     },
     {
       testimonial:
-        "I've had the opportunity to work with Aawez on multiple projects and can say the excellence of his design and creativity.",
-      name: "Aarif Mansuri",
-      designation: "Delivery Manager",
-      company: "Impero IT",
-      image: aarif,
+        "I highly recommend Aawez for his expertise in DevOps and AWS, particularly in optimizing CI/CD pipelines for efficient and reliable software deliveries.",
+      name: "Arpit Christie",
+      designation: "DevOps Manager",
+      company: "Azilen",
+      image: arpit,
     },
   ];
   
