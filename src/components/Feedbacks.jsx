@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -16,6 +17,7 @@ const FeedBackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className="bg-[#0A0A0A] p-10 rounded-3xl xs:w-[320px] w-full flex flex-col" // Added flex and flex-col here
   >
+    
     <p className="text-white font-black text-[48px]">"</p>
     <div className="mt-1 flex-1"> {/* Added flex-1 here to ensure that this div takes up all available space */}
       <p className="text-white tracking-wider text-[18px] pb-5">{testimonial}</p>
@@ -37,6 +39,7 @@ const FeedBackCard = ({
         />
       </div>
     </div>
+  
   </motion.div>
 );
 const Feedbacks = () => {
