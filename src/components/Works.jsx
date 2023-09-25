@@ -108,6 +108,25 @@ const ProjectModal = ({ project, onClose }) => {
             alt={project.name}
             className="w-full object-cover rounded-md py-5"
           />
+          {project.link1_name ? (
+            <a
+              href={project.link1}
+              target="_blank"
+              className="text-[#FF920B] border-2 border-[#FF920B] font-medium px-2 py-1 rounded inline-block hover:text-[#d37b0e] hover:border-[#d37b0e] mr-2"
+            >
+              {project.link1_name}
+            </a>
+          ) : null}
+
+          {project.link2_name ? (
+            <a
+              href={project.link2}
+              target="_blank"
+              className="bg-[#FF920B] border-2 border-[#FF920B] text-black font-medium px-2 py-1 rounded inline-block hover:bg-[#d37b0e] hover:border-[#d37b0e] ml-1"
+            >
+              {project.link2_name}
+            </a>
+          ) : null}
           <p className="mt-2 text-secondary text-[14px]">
             {project.description}
           </p>
@@ -120,7 +139,7 @@ const ProjectModal = ({ project, onClose }) => {
           </div>
           {/* Render other details of your project here */}
         </div>
-        </motion.div>
+      </motion.div>
     </motion.div>,
     document.getElementById("modal-root")
   );

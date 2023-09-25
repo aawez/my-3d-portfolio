@@ -201,7 +201,11 @@ import {
         },
       ],
       image: palette,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/aawez/color-palette-using-gpt3/",
+      link1_name: "Github",
+      link1: "https://github.com/aawez/color-palette-using-gpt3/",
+      link2_name: "View Live",
+      link2: "http://palette.aawez.com/",
     },
     {
       name: "8Bit Audio",
@@ -223,6 +227,8 @@ import {
       ],
       image: eightbit,
       source_code_link: "https://github.com/",
+      link2_name: "View Live",
+      link2: "https://8bit.audio/",
     },
     {
       name: "Intrusion Detection",
@@ -243,7 +249,11 @@ import {
         },
       ],
       image: thesis,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/aawez/Network-Intrusion-Detection-using-Prototypical-Networks-on-NSL-KDD-Dataset/",
+      link1_name: "Github",
+      link1: "https://github.com/aawez/Network-Intrusion-Detection-using-Prototypical-Networks-on-NSL-KDD-Dataset/",
+      link2_name: "View Paper",
+      link2: "https://scholarworks.calstate.edu/concern/theses/9593v2185",
     },
   ];
   
