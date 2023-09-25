@@ -23,6 +23,9 @@ import {
     eightbit,
     thesis,
     threejs,
+    jugal,
+    preet,
+    aarif,
   } from "../assets";
   
   export const navLinks = [
@@ -150,27 +153,27 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+        "I was impressed by Aawez's ability to quickly learn and adopt new technologies. He is an adept problem-solver who can tackle complex issues.",
+      name: "Jugal Bhavsar",
       designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      company: "Rootle.ai",
+      image: jugal,
+    },
+    {
+      testimonial:
+        "Aawez's strong knowledge of machine learning helped us create innovative solutions and meet project needs using the latest technology and methods.",
+      name: "Preet Merchant",
+      designation: "Sofware Engineer",
+      company: "Amazon",
+      image: preet,
+    },
+    {
+      testimonial:
+        "I've had the opportunity to work with Aawez on multiple projects and can say the excellence of his design and creativity.",
+      name: "Aarif Mansuri",
+      designation: "Delivery Manager",
+      company: "Impero IT",
+      image: aarif,
     },
   ];
   
