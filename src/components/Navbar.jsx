@@ -37,7 +37,7 @@ const Navbar = () => {
             to={link.id} // link.id should match the name prop of the corresponding Element component
             spy={true}
             smooth={true}
-            duration={500}
+            duration={0}
             offset={-70} // Adjust according to your navbar height
             activeClass="text-white font-bold"
             className="text-secondary"
