@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
+import { Link as ScrollLink } from 'react-scroll';
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -29,18 +31,22 @@ const Navbar = () => {
           </p> */}
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
-            >
-              <a href={`#${link.id}`}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+      {navLinks.map((link) => (
+        <li key={link.id} className="hover:text-white text-[18px] font-medium cursor-pointer">
+          <ScrollLink
+            to={link.id} // link.id should match the name prop of the corresponding Element component
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70} // Adjust according to your navbar height
+            activeClass="text-white font-bold"
+            className="text-secondary"
+          >
+            {link.title}
+          </ScrollLink>
+        </li>
+      ))}
+    </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img

@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Element } from 'react-scroll';
 
 import {
   About,
@@ -21,19 +22,30 @@ const App = () => {
             <Navbar />
             <Hero />
           </div>
+          <Element name="about">
           <About />
+          </Element>
+          <Element name="work">
           <Experience />
           <Tech />
+          </Element>
         </div>
+        <Element name="project">
         <div className="bg-worksbg">
           <Works />
         </div>
+        </Element>
+        
         <div className="bg-primary">
+        <Element name="kudos">
           <Feedbacks />
+          </Element>
+          <Element name="contact">
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />
           </div>
+          </Element>
         </div>
       </div>
     </BrowserRouter>

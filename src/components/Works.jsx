@@ -8,7 +8,6 @@ import { fadeIn, textVariant } from "../utils/motion";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 
-
 const ProjectCard = ({
   index,
   name,
