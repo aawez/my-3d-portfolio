@@ -1,12 +1,13 @@
 import Tilt from "react-parallax-tilt";
 import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { close_red , github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+
 
 const ProjectCard = ({
   index,
@@ -79,7 +80,7 @@ const ProjectModal = ({ project, onClose }) => {
 
   return ReactDOM.createPortal(
     <motion.div
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-100"
+      className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-100 backdrop-blur-sm"
       onClick={handleOverlayClick}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -88,7 +89,7 @@ const ProjectModal = ({ project, onClose }) => {
     >
       <motion.div
         ref={modalContentRef} // Applying ref to the modal content div
-        className="bg-[#0A0A0A] p-10 rounded-xl max-w-xl w-full"
+        className="bg-[#0A0A0A] p-5 rounded-xl max-w-xl w-full"
         initial="hidden"
         animate="visible"
         exit="exit"
@@ -97,13 +98,14 @@ const ProjectModal = ({ project, onClose }) => {
       >
         <div
           ref={modalContentRef} // Applying ref to the modal content div
-          className="bg-[#0A0A0A] p-10 rounded-xl max-w-xl w-full"
+          className="bg-[#0A0A0A] p-8 rounded-xl max-w-xl w-full"
         >
           <button
             onClick={onClose}
-            className="float-right hover:text-[#bcbcbc]"
+            className="float-right hover:text-[#bcbcbc] mt-1.5"
           >
-            Close
+            <img src={close_red} alt="close" className="w-6 h-6 hover:opacity-75"/>
+            
           </button>
           <h2 className="text-white font-bold text-[24px]">{project.name}</h2>
           <img
@@ -111,6 +113,7 @@ const ProjectModal = ({ project, onClose }) => {
             alt={project.name}
             className="w-full object-cover rounded-md py-5"
           />
+          <div className="pb-2">
           {project.link1_name ? (
             <a
               href={project.link1}
@@ -130,7 +133,8 @@ const ProjectModal = ({ project, onClose }) => {
               {project.link2_name}
             </a>
           ) : null}
-          <p className="mt-2 text-secondary text-[14px]">
+          </div>
+          <p className="mt-2 pb-2 text-secondary text-[14px]">
             {project.description}
           </p>
           <div className="flex flex-wrap gap-2 mt-2">
