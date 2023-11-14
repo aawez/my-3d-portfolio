@@ -140,7 +140,7 @@ const experiences = [
     ],
   },
   {
-    title: "Data Analyst Intern",
+    title: "Software Engineer Intern",
     company_name: "Impero IT Services Pvt. Ltd.",
     icon: impero,
     iconBg: "#494949",
